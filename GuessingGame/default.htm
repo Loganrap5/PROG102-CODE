@@ -1,0 +1,34 @@
+<!-- author: Logan Rappaport, 03/01/2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guess Game</title>
+</head>
+<body>
+
+    <h1>Guess the coins in the chest!</h1>
+
+    <p>
+        How many gold coins do you think are in the chest? 
+        Try and guess!
+    </p>
+
+    <p>
+        Enter your guess below. (Hint: It's somehwere between 800 and 1200.)
+    </p>
+
+    <input type="number" id="guessInput" min="800" max="1200">
+    <button class="submit" onclick="checkGuess()">Submit Guess</button>
+
+    <p id="message"></p>
+
+    <img src="chest.png" alt="Treasure chest full of coins" class="chest-image" />
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Chest Image created by ChatGPT. Prompt = "Create image of chest holding around 1000 coins."-->
